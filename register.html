@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+</head>
+
+<body>
+    <h1 style="padding-left: 350px;">Register Page</h1>
+
+    <form method="POST" action="" style="padding-left: 350px;">
+        {{ form.hidden_tag() }}<br><br>
+        {{ form.username }}<br><br>
+        {{ form.password }}<br><br>
+        {{ form.submit }}<br><br>
+    </form>
+   <br><br>
+    <a href="{{ url_for('login') }}" style="padding-left: 350px;">Already have an account? Log In</a>
+</body>
+
+</html>
